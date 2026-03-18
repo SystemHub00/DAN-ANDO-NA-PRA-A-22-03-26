@@ -236,25 +236,7 @@ src="https://www.facebook.com/tr?id=26419185324388434&ev=PageView&noscript=1"
             <div class="protocolo-numero">{{ protocolo }}</div>
             <div style="color:#7a7a7a;font-size:0.98em;margin-top:8px;">Guarde este número para acompanhar sua inscrição</div>
         </div>
-        <div class="info-contato">
-            <div style="margin-bottom: 18px;">
-                <b>Confirmação de participação:</b><br>
-                <span style="display: block; margin: 10px 0;">
-                    <input type="checkbox" checked disabled style="accent-color:#de254b; margin-right:6px;"> Confirmo que resido na Ilha do Governador ou região e tenho interesse em participar do evento.
-                </span>
-                Confirmo que todas as informações fornecidas são verdadeiras e estou de acordo com os termos de participação.<br>
-                Autorizo o uso dos meus dados para fins de inscrição e contato relacionado ao curso.<br>
-                Também autorizo o uso da minha imagem para divulgação nos canais de comunicação e redes sociais do projeto e da Prefeitura do Rio de Janeiro.
-            </div>
-            <div style="margin-bottom: 10px;">
-                <b>Ao confirmar você declara ciência de que:</b>
-                <ul style="color:#de254b; margin: 8px 0 0 18px;">
-                    <li>O evento é totalmente gratuito</li>
-                    <li>Em caso de chuva será cancelado</li>
-                    <li>Os dados serão usados apenas para inscrição</li>
-                </ul>
-            </div>
-        </div>
+        <!-- Bloco de confirmação de participação removido conforme solicitado -->
         <div class="btns">
             <a class="btn-whatsapp" href="https://wa.me/?text=Acabei%20de%20me%20inscrever%20em%20um%20curso%20gratuito%20incr%C3%ADvel!%20Garanta%20sua%20vaga%20tamb%C3%A9m%20e%20venha%20transformar%20sua%20carreira%20comigo.%20Inscreva-se%20aqui:%20https://dancando-na-praca.onrender.com" target="_blank" style="display: flex; align-items: center; justify-content: center; min-width: 220px; min-height: 48px; font-size: 1.13em; font-weight: 800; border-radius: 18px; border: none; box-shadow: 0 2px 12px #de254b33; letter-spacing: 0.5px; transition: background 0.2s, box-shadow 0.2s, transform 0.1s; outline: none; text-transform: uppercase; text-align: center; margin: 0 auto 18px auto; background: #de254b; color: #fff; cursor: pointer; text-decoration: none;">&#128241; COMPARTILHAR NO WHATSAPP</a>
             <a class="btn-inicio" href="/" style="display: flex; align-items: center; justify-content: center; min-width: 220px; min-height: 48px; font-size: 1.18em; font-weight: 800; border-radius: 18px; border: 2px solid #de254b; background: #fff; color: #de254b; box-shadow: 0 2px 12px #de254b22; letter-spacing: 0.5px; transition: background 0.2s, box-shadow 0.2s, transform 0.1s; outline: none; text-transform: uppercase; text-align: center; margin: 0 auto;">VOLTAR AO INÍCIO</a>
@@ -474,9 +456,22 @@ src="https://www.facebook.com/tr?id=26419185324388434&ev=PageView&noscript=1"
                 <input type="text" id="como_conheceu" name="como_conheceu" placeholder="Digite como conheceu o projeto" value="{{ dados.get('como_conheceu', '') }}" style="border:1.5px solid #de254b; color:#222; background:#fff0f3; box-shadow:0 2px 12px #de254b22; transition:border 0.2s, box-shadow 0.2s; border-radius:14px; padding:13px 18px; font-size:1.09em; font-family:'Wise', Arial, sans-serif; outline:none; width:100%; max-width:380px; min-width:220px; margin:0 auto; display:block;">
             </div>
             <div class="confirmacao-box">
-                <label><input type="checkbox" id="confirma-dados">&nbsp;Confirmo que todas as informações fornecidas são verdadeiras e estou de acordo com os termos de participação. Autorizo o uso dos meus dados para fins de inscrição e contato relacionado ao curso.<br><br>
-                Também autorizo o uso da minha imagem para divulgação nos canais de comunicação e redes sociais do projeto e da Prefeitura do Rio de Janeiro.<br><br>
-                Estou ciente de que o certificado de conclusão só será emitido para alunos considerados aptos, após avaliação do professor responsável pelo curso.</label>
+                                <label style="display:block;">
+                                    <input type="checkbox" id="confirma-dados">&nbsp;
+                                    <b>Confirmação de participação:</b>
+                                    <ul style="margin: 8px 0 8px 18px; color:#de254b; font-weight:400;">
+                                        <li>Confirmo que resido na Ilha do Governador ou região e tenho interesse em participar do evento.</li>
+                                        <li>Confirmo que todas as informações fornecidas são verdadeiras e estou de acordo com os termos de participação.</li>
+                                        <li>Autorizo o uso dos meus dados para fins de inscrição e contato relacionado ao curso.</li>
+                                        <li>Também autorizo o uso da minha imagem para divulgação nos canais de comunicação e redes sociais do projeto e da Prefeitura do Rio de Janeiro.</li>
+                                    </ul>
+                                    <b>Ao confirmar você declara ciência de que:</b>
+                                    <ul style="margin: 8px 0 0 18px; color:#de254b; font-weight:400;">
+                                        <li>O evento é totalmente gratuito</li>
+                                        <li>Em caso de chuva será cancelado</li>
+                                        <li>Os dados serão usados apenas para inscrição</li>
+                                    </ul>
+                                </label>
             </div>
             <div class="form-btns" style="display:flex; flex-direction:column !important; gap:12px; width:100%; margin-top:18px;">
                 <button type="submit" class="btn-finalizar" id="btn-finalizar" disabled style="margin-bottom:0;">Finalizar Inscrição</button>
