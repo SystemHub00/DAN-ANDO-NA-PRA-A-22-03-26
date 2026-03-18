@@ -86,7 +86,12 @@ TEMPLATE_CONFIRMACAO = r'''
             width: 100%;
         }
         .btn-whatsapp, .btn-inicio {
-            min-width: 180px;
+            width: 89% !important;
+            min-width: 180px !important;
+            max-width: 490px !important;
+            margin: 0 auto 8px auto !important;
+            display: block;
+            box-sizing: border-box;
             min-height: 48px;
             padding: 16px 36px;
             font-size: 1.13em;
@@ -98,7 +103,6 @@ TEMPLATE_CONFIRMACAO = r'''
             transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
             outline: none;
             text-transform: uppercase;
-            display: inline-block;
             background: #de254b;
             color: #fff;
             cursor: pointer;
@@ -108,6 +112,7 @@ TEMPLATE_CONFIRMACAO = r'''
             background: #fff;
             color: #de254b;
             border: 2px solid #de254b;
+            box-shadow: 0 2px 12px #de254b33;
         }
         .btn-whatsapp:hover, .btn-inicio:hover {
             background: #de254b;
@@ -140,8 +145,11 @@ TEMPLATE_CONFIRMACAO = r'''
                 font-size: 1.1em;
             }
             .btn-whatsapp, .btn-inicio {
-                min-width: 100%;
-                width: 100%;
+                min-width: 0;
+                width: 100vw;
+                max-width: 100vw;
+                box-sizing: border-box;
+                margin-left: calc(-1 * (50vw - 50%));
             }
         }
     </style>
@@ -239,7 +247,7 @@ src="https://www.facebook.com/tr?id=26419185324388434&ev=PageView&noscript=1"
         <!-- Bloco de confirmação de participação removido conforme solicitado -->
         <div class="btns">
             <a class="btn-whatsapp" href="https://wa.me/?text=Acabei%20de%20me%20inscrever%20em%20um%20curso%20gratuito%20incr%C3%ADvel!%20Garanta%20sua%20vaga%20tamb%C3%A9m%20e%20venha%20transformar%20sua%20carreira%20comigo.%20Inscreva-se%20aqui:%20https://dancando-na-praca.onrender.com" target="_blank" style="display: flex; align-items: center; justify-content: center; min-width: 220px; min-height: 48px; font-size: 1.13em; font-weight: 800; border-radius: 18px; border: none; box-shadow: 0 2px 12px #de254b33; letter-spacing: 0.5px; transition: background 0.2s, box-shadow 0.2s, transform 0.1s; outline: none; text-transform: uppercase; text-align: center; margin: 0 auto 18px auto; background: #de254b; color: #fff; cursor: pointer; text-decoration: none;">&#128241; COMPARTILHAR NO WHATSAPP</a>
-            <a class="btn-inicio" href="/" style="display: flex; align-items: center; justify-content: center; min-width: 220px; min-height: 48px; font-size: 1.18em; font-weight: 800; border-radius: 18px; border: 2px solid #de254b; background: #fff; color: #de254b; box-shadow: 0 2px 12px #de254b22; letter-spacing: 0.5px; transition: background 0.2s, box-shadow 0.2s, transform 0.1s; outline: none; text-transform: uppercase; text-align: center; margin: 0 auto;">VOLTAR AO INÍCIO</a>
+            <a class="btn-inicio" href="/" style="display: flex; align-items: center; justify-content: center; min-width: 220px; min-height: 48px; font-size: 1.13em; font-weight: 800; border-radius: 18px; border: 2px solid #de254b; background: #fff; color: #de254b; box-shadow: 0 2px 12px #de254b33; letter-spacing: 0.5px; transition: background 0.2s, box-shadow 0.2s, transform 0.1s; outline: none; text-transform: uppercase; text-align: center; margin: 0 auto 18px auto;">VOLTAR AO INÍCIO</a>
         </div>
         <div class="proximos-passos">
             <b>Próximos Passos:</b>
