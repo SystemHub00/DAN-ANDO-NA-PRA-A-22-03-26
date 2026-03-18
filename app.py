@@ -1579,6 +1579,8 @@ def inscricao():
         if not ddd or ddd not in ddds_validos:
             return render_template_string(TEMPLATE_INSCRICAO, erro_whatsapp='Informe um DDD válido do Brasil.')
         session['whatsapp'] = whatsapp
+        session['cep'] = request.form.get('cep', '')
+        session['bairro'] = request.form.get('bairro', '')
         session['email'] = request.form.get('email')
         session['genero'] = request.form.get('genero')
         # Validação de idade mínima e máxima
@@ -1599,22 +1601,6 @@ def inscricao():
             return render_template_string(TEMPLATE_INSCRICAO, erro_nascimento='Data de nascimento inválida.')
         return redirect(url_for('curso'))
     return render_template_string(TEMPLATE_INSCRICAO)
-
-@app.route('/endereco', methods=['GET', 'POST'])
-def endereco():
-    if request.method == 'POST':
-        cep = request.form.get('cep', '').replace('-', '').strip()
-        if not (cep.isdigit() and len(cep) == 8):
-            return render_template_string(TEMPLATE_ENDERECO, erro_cep='CEP inválido. Informe no formato 00000-000.')
-        session['cep'] = request.form.get('cep')
-        session['endereco'] = request.form.get('endereco')
-        session['numero'] = request.form.get('numero')
-        session['complemento'] = request.form.get('complemento')
-        session['bairro'] = request.form.get('bairro')
-        session['cidade'] = request.form.get('cidade')
-        session['estado'] = request.form.get('estado')
-        return redirect(url_for('curso'))
-    return render_template_string(TEMPLATE_ENDERECO)
 
 @app.route('/curso', methods=['GET', 'POST'])
 def curso():
