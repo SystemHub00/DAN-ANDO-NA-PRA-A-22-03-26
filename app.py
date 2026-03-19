@@ -442,24 +442,24 @@ src="https://www.facebook.com/tr?id=26419185324388434&ev=PageView&noscript=1"
             <div class="info-box">
                 <div class="info-title">&#128100; Dados Pessoais</div>
                 <div class="info-content">
-                    Nome: {{ dados.get('nome', '') }}<br>
-                    CPF: {{ dados.get('cpf', '') }}<br>
-                    Data de Nascimento: {{ dados.get('nascimento', '') }}<br>
-                    Gênero: {{ dados.get('genero', '') }}<br>
-                    Email: {{ dados.get('email', '') }}<br>
-                    WhatsApp: {{ dados.get('whatsapp', '') }}
+                    <span style="color:#de254b;">Nome:</span> <span style="color:#222; font-weight:500;">{{ dados.get('nome', '') }}</span><br>
+                    <span style="color:#de254b;">CPF:</span> <span style="color:#222; font-weight:500;">{{ dados.get('cpf', '') }}</span><br>
+                    <span style="color:#de254b;">Data de Nascimento:</span> <span style="color:#222; font-weight:500;">{{ dados.get('nascimento', '') }}</span><br>
+                    <span style="color:#de254b;">Gênero:</span> <span style="color:#222; font-weight:500;">{{ dados.get('genero', '') }}</span><br>
+                    <span style="color:#de254b;">Email:</span> <span style="color:#222; font-weight:500;">{{ dados.get('email', '') }}</span><br>
+                    <span style="color:#de254b;">WhatsApp:</span> <span style="color:#222; font-weight:500;">{{ dados.get('whatsapp', '') }}</span>
                 </div>
             </div>
             <div class="info-box">
                 <div class="info-title">&#127891; Curso Escolhido</div>
                 <div class="info-content">
-                    Curso: {{ dados.get('curso', '') }}<br>
-                    Local: {{ dados.get('local', '') }}<br>
-                    Turma: {{ dados.get('turma', '') }}<br>
-                    Horário: {{ dados.get('horario', '') }}<br>
-                    Data de Início: {{ dados.get('data_inicio', '') }}<br>
-                    Encerramento: {{ dados.get('encerramento', '') }}<br>
-                    Endereço: {{ dados.get('endereco_curso', '') }}
+                    <span style="color:#de254b;">Curso:</span> <span style="color:#222; font-weight:500;">{{ dados.get('curso', '') }}</span><br>
+                    <span style="color:#de254b;">Local:</span> <span style="color:#222; font-weight:500;">{{ dados.get('local', '') }}</span><br>
+                    <span style="color:#de254b;">Turma:</span> <span style="color:#222; font-weight:500;">{{ dados.get('turma', '') }}</span><br>
+                    <span style="color:#de254b;">Horário:</span> <span style="color:#222; font-weight:500;">{{ dados.get('horario', '') }}</span><br>
+                    <span style="color:#de254b;">Data de Início:</span> <span style="color:#222; font-weight:500;">{{ dados.get('data_inicio', '') }}</span><br>
+                    <span style="color:#de254b;">Encerramento:</span> <span style="color:#222; font-weight:500;">{{ dados.get('encerramento', '') }}</span><br>
+                    <span style="color:#de254b;">Endereço:</span> <span style="color:#222; font-weight:500;">{{ dados.get('endereco_curso', '') }}</span>
                 </div>
             </div>
             <div class="form-group" style="background: #fff0f3; border: 2px solid #de254b; border-radius: 16px; padding: 18px 22px; margin-bottom: 18px; box-shadow: 0 2px 12px #de254b22;">
