@@ -631,10 +631,18 @@ TEMPLATE_WIZARD = r'''
         }
 
         .review-check input {
-            margin-top: 4px;
-            transform: scale(1.2);
+                margin-top: 3px;
+                width: 20px;
+                min-width: 20px;
+                height: 20px;
+                flex: 0 0 20px;
             accent-color: var(--cor-principal);
         }
+
+            .review-check span {
+                flex: 1 1 auto;
+                min-width: 0;
+            }
 
         .review-check ul {
             margin: 8px 0 0 18px;
@@ -821,6 +829,14 @@ TEMPLATE_WIZARD = r'''
                 align-items: flex-start;
                 padding: 8px;
             }
+
+            .review-check input {
+                width: 22px;
+                min-width: 22px;
+                height: 22px;
+                flex-basis: 22px;
+            }
+
             .review-check ul {
                 padding-left: 2px;
             }
