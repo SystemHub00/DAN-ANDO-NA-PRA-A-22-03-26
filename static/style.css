@@ -138,6 +138,43 @@ select:focus {
 /* INPUTS E SELECTS SEMPRE PRETO */
 input, select {
     color: #222 !important;
+
+}
+
+/* IMPORTANTE! garante que o layout respeite a largura do celular */
+@media (max-width: 640px) {
+    html,
+    body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    body * {
+        min-width: 0;
+    }
+
+    img,
+    svg,
+    iframe,
+    video,
+    canvas {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    div,
+    section,
+    article,
+    form,
+    input,
+    select,
+    textarea,
+    button,
+    a {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
 }
 /* Placeholder dos inputs sempre preto */
 input::placeholder {
