@@ -1045,7 +1045,7 @@ TEMPLATE_WIZARD = r'''
                                 <label for="endereco_curso">Endereço</label>
                                 <div class="input-with-action">
                                     <input type="text" id="endereco_curso" name="endereco_curso" class="readonly-field" readonly value="{{ course_info.endereco_curso }}">
-                                    <button type="button" class="icon-button" id="btn-copiar-endereco" title="Copiar endereço">📋</button>
+                                        <button type="button" class="icon-button" id="btn-copiar-endereco" title="Copiar endereço">COPIAR 📋</button>
                                 </div>
                             </div>
                         </div>
